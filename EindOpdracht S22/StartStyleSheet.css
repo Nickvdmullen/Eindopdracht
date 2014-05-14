@@ -1,0 +1,17 @@
+﻿body {
+}
+
+#DivHeader
+{
+    text-align:center;
+}
+
+#DivStartButtons
+{
+    text-align:center;
+}
+
+#btnStartLoad
+{
+    margin-left :10px;
+}
