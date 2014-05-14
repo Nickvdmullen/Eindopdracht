@@ -7,16 +7,20 @@
 
     public class Class
     {
+        Classes.DBControl Database = new Classes.DBControl();
+
         public string Name { get; private set; }
         public string Tooltip { get; private set; }
         public string imgURL { get; private set; }
-        public List<Specialization> PossibleSpecs { get; private set; }
+        public string[] PossibleSpecs = new string[3];
 
         public Class(string name)
         {
-            //Get info from Database
+            this.PossibleSpecs = Database.GetSpecialization(this);
+            this.Tooltip = Database.GetToolTip(this);
+            this.Name = name;
         }
 
-
+        
     }
 }

@@ -106,5 +106,88 @@
             Close();
             return ReceivedBuild;
         }
+
+
+        public List<string> GetToolTips(Class Class)
+        {
+            Open();
+
+            string sql = "SELECT TOOLTIP FROM SPECIALIZATION WHERE CLASSNAME =" + Class.Name;
+            OleDbCommand Command = new OleDbCommand(sql, connection);
+            List<string> mytooltips = new List<string>();
+
+            try
+            {
+                OleDbDataReader Reader = Command.ExecuteReader();
+
+                while (Reader.Read())
+                {
+                    mytooltips.Add(Convert.ToString(Reader["TOOLTIP"]));
+                }
+            }
+            catch
+            {
+
+            }
+            return mytooltips;
+        }
+
+        public string GetToolTip(Class Class)
+        {
+            Open();
+            string sql = "SELECT TOOLTIP FROM CLASS WHERE CLASSNAME = " + Class.Name;
+            OleDbCommand Command = new OleDbCommand(sql, connection);
+            string Tooltip = "";
+
+            try
+            {
+                OleDbDataReader Reader = Command.ExecuteReader();
+
+                while (Reader.Read())
+                {
+                    Tooltip = Reader["TOOLTIP"].ToString();
+                }
+            }
+            catch
+            {
+
+            }
+            return Tooltip;
+        }
+
+        public string[] GetSpecialization(Class Class)
+        {
+            Open();
+
+            string sql = "SELECT TOOLTIP FROM SPECIALIZATION WHERE CLASSNAME =" + Class.Name;
+            OleDbCommand Command = new OleDbCommand(sql, connection);
+            string[] mySpecs = new string[3];
+
+            try
+            {
+                OleDbDataReader Reader = Command.ExecuteReader();
+
+                while (Reader.Read())
+                {
+                    if (mySpecs[0] == null)
+                    {
+                       mySpecs[0] = (Convert.ToString(Reader["TOOLTIP"]));
+                    }
+                    else if (mySpecs[1] == null)
+                    {
+                        mySpecs[1] = (Convert.ToString(Reader["TOOLTIP"]));
+                    }
+                    else if (mySpecs[2] == null)
+                    {
+                        mySpecs[3] = (Convert.ToString(Reader["TOOLTIP"]));
+                    }
+                }
+            }
+            catch
+            {
+
+            }
+            return mySpecs;
+        }
     }
 }
