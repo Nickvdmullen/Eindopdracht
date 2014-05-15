@@ -17,142 +17,6 @@
             
         }
 
-        private void FillPage()
-        {
-            
-            List<string>Build = (List<string>)Session["Build"];
-
-            if (Session["Build"] != null)
-            {
-                ibtnDeathKnight.BorderColor = Color.Black;
-                ibtnDruid.BorderColor = Color.Black;
-                ibtnRogue.BorderColor = Color.Black;
-                ibtnMage.BorderColor = Color.Black;
-                ibtnMonk.BorderColor = Color.Black;
-                ibtnPriest.BorderColor = Color.Black;
-                ibtnHunter.BorderColor = Color.Black;
-                ibtnShaman.BorderColor = Color.Black;
-                ibtnWarlock.BorderColor = Color.Black;
-                ibtnWarrior.BorderColor = Color.Black;
-                ibtnPaladin.BorderColor = Color.Black;
-
-                ibtnSpec1.BorderColor = Color.Black;
-                ibtnSpec2.BorderColor = Color.Black;
-                ibtnSpec3.BorderColor = Color.Black;
-
-                ibtnSpell1.BorderColor = Color.Black;
-                ibtnSpell2.BorderColor = Color.Black;
-                ibtnSpell3.BorderColor = Color.Black;
-
-                ibtnSpell4.BorderColor = Color.Black;
-                ibtnSpell5.BorderColor = Color.Black;
-                ibtnSpell6.BorderColor = Color.Black;
-
-                ibtnSpell7.BorderColor = Color.Black;
-                ibtnSpell8.BorderColor = Color.Black;
-                ibtnSpell9.BorderColor = Color.Black;
-
-                ibtnSpell10.BorderColor = Color.Black;
-                ibtnSpell11.BorderColor = Color.Black;
-                ibtnSpell12.BorderColor = Color.Black;
-
-                ibtnSpell13.BorderColor = Color.Black;
-                ibtnSpell14.BorderColor = Color.Black;
-                ibtnSpell15.BorderColor = Color.Black;
-
-                ibtnSpell16.BorderColor = Color.Black;
-                ibtnSpell17.BorderColor = Color.Black;
-                ibtnSpell18.BorderColor = Color.Black;
-
-                foreach (string choice in Build)
-                {
-                    if (choice == null)
-                    {
-                        return;
-                    }
-                    int Choice = Convert.ToInt32(choice);
-
-                    switch (Choice)
-                    {
-                        //Classes
-                        case 1: ibtnDeathKnight.BorderColor = Color.Lime;
-                            break;
-                        case 2: ibtnDruid.BorderColor = Color.Lime;
-                            break;
-                        case 3: ibtnMage.BorderColor = Color.Lime;
-                            break;
-                        case 4: ibtnMonk.BorderColor = Color.Lime;
-                            break;
-                        case 5: ibtnPaladin.BorderColor = Color.Lime;
-                            break;
-                        case 6: ibtnPriest.BorderColor = Color.Lime;
-                            break;
-                        case 7: ibtnHunter.BorderColor = Color.Lime;
-                            break;
-                        case 8: ibtnShaman.BorderColor = Color.Lime;
-                            break;
-                        case 9: ibtnRogue.BorderColor = Color.Lime;
-                            break;
-                        case 10: ibtnWarrior.BorderColor = Color.Lime;
-                            break;
-                        case 11: ibtnWarlock.BorderColor = Color.Lime;
-                            break;
-                        //Specialization
-                        case 12: ibtnSpec1.BorderColor = Color.Lime;
-                            break;
-                        case 13: ibtnSpec2.BorderColor = Color.Lime;
-                            break;
-                        case 14: ibtnSpec3.BorderColor = Color.Lime;
-                            break;
-                        //15
-                        case 15: ibtnSpell1.BorderColor = Color.Lime;
-                            break;
-                        case 16: ibtnSpell2.BorderColor = Color.Lime;
-                            break;
-                        case 17: ibtnSpell3.BorderColor = Color.Lime;
-                            break;
-                        //30
-                        case 18: ibtnSpell4.BorderColor = Color.Lime;
-                            break;
-                        case 19: ibtnSpell5.BorderColor = Color.Lime;
-                            break;
-                        case 20: ibtnSpell6.BorderColor = Color.Lime;
-                            break;
-                        //45
-                        case 21: ibtnSpell7.BorderColor = Color.Lime;
-                            break;
-                        case 22: ibtnSpell8.BorderColor = Color.Lime;
-                            break;
-                        case 23: ibtnSpell9.BorderColor = Color.Lime;
-                            break;
-                        //60
-                        case 24: ibtnSpell10.BorderColor = Color.Lime;
-                            break;
-                        case 25: ibtnSpell11.BorderColor = Color.Lime;
-                            break;
-                        case 26: ibtnSpell12.BorderColor = Color.Lime;
-                            break;
-                        //75
-                        case 27: ibtnSpell13.BorderColor = Color.Lime;
-                            break;
-                        case 28: ibtnSpell14.BorderColor = Color.Lime;
-                            break;
-                        case 29: ibtnSpell15.BorderColor = Color.Lime;
-                            break;
-                        //90
-                        case 30: ibtnSpell16.BorderColor = Color.Lime;
-                            break;
-                        case 31: ibtnSpell17.BorderColor = Color.Lime;
-                            break;
-                        case 32: ibtnSpell18.BorderColor = Color.Lime;
-                            break;
-                        //empty
-                        
-                    }
-                }
-            }
-        }
-
         protected void ibtnDeathKnight_Click(object sender, ImageClickEventArgs e)
         {
             Class DeathKnight = new Class("1");
@@ -462,6 +326,143 @@
                 }
             }
         }
+
+        private void FillPage()
+        {
+
+            List<string> Build = (List<string>)Session["Build"];
+
+            if (Session["Build"] != null)
+            {
+                ibtnDeathKnight.BorderColor = Color.Black;
+                ibtnDruid.BorderColor = Color.Black;
+                ibtnRogue.BorderColor = Color.Black;
+                ibtnMage.BorderColor = Color.Black;
+                ibtnMonk.BorderColor = Color.Black;
+                ibtnPriest.BorderColor = Color.Black;
+                ibtnHunter.BorderColor = Color.Black;
+                ibtnShaman.BorderColor = Color.Black;
+                ibtnWarlock.BorderColor = Color.Black;
+                ibtnWarrior.BorderColor = Color.Black;
+                ibtnPaladin.BorderColor = Color.Black;
+
+                ibtnSpec1.BorderColor = Color.Black;
+                ibtnSpec2.BorderColor = Color.Black;
+                ibtnSpec3.BorderColor = Color.Black;
+
+                ibtnSpell1.BorderColor = Color.Black;
+                ibtnSpell2.BorderColor = Color.Black;
+                ibtnSpell3.BorderColor = Color.Black;
+
+                ibtnSpell4.BorderColor = Color.Black;
+                ibtnSpell5.BorderColor = Color.Black;
+                ibtnSpell6.BorderColor = Color.Black;
+
+                ibtnSpell7.BorderColor = Color.Black;
+                ibtnSpell8.BorderColor = Color.Black;
+                ibtnSpell9.BorderColor = Color.Black;
+
+                ibtnSpell10.BorderColor = Color.Black;
+                ibtnSpell11.BorderColor = Color.Black;
+                ibtnSpell12.BorderColor = Color.Black;
+
+                ibtnSpell13.BorderColor = Color.Black;
+                ibtnSpell14.BorderColor = Color.Black;
+                ibtnSpell15.BorderColor = Color.Black;
+
+                ibtnSpell16.BorderColor = Color.Black;
+                ibtnSpell17.BorderColor = Color.Black;
+                ibtnSpell18.BorderColor = Color.Black;
+
+                foreach (string choice in Build)
+                {
+                    if (choice == null)
+                    {
+                        return;
+                    }
+                    int Choice = Convert.ToInt32(choice);
+
+                    switch (Choice)
+                    {
+                        //Classes
+                        case 1: ibtnDeathKnight.BorderColor = Color.Lime;
+                            break;
+                        case 2: ibtnDruid.BorderColor = Color.Lime;
+                            break;
+                        case 3: ibtnMage.BorderColor = Color.Lime;
+                            break;
+                        case 4: ibtnMonk.BorderColor = Color.Lime;
+                            break;
+                        case 5: ibtnPaladin.BorderColor = Color.Lime;
+                            break;
+                        case 6: ibtnPriest.BorderColor = Color.Lime;
+                            break;
+                        case 7: ibtnHunter.BorderColor = Color.Lime;
+                            break;
+                        case 8: ibtnShaman.BorderColor = Color.Lime;
+                            break;
+                        case 9: ibtnRogue.BorderColor = Color.Lime;
+                            break;
+                        case 10: ibtnWarrior.BorderColor = Color.Lime;
+                            break;
+                        case 11: ibtnWarlock.BorderColor = Color.Lime;
+                            break;
+                        //Specialization
+                        case 12: ibtnSpec1.BorderColor = Color.Lime;
+                            break;
+                        case 13: ibtnSpec2.BorderColor = Color.Lime;
+                            break;
+                        case 14: ibtnSpec3.BorderColor = Color.Lime;
+                            break;
+                        //15
+                        case 15: ibtnSpell1.BorderColor = Color.Lime;
+                            break;
+                        case 16: ibtnSpell2.BorderColor = Color.Lime;
+                            break;
+                        case 17: ibtnSpell3.BorderColor = Color.Lime;
+                            break;
+                        //30
+                        case 18: ibtnSpell4.BorderColor = Color.Lime;
+                            break;
+                        case 19: ibtnSpell5.BorderColor = Color.Lime;
+                            break;
+                        case 20: ibtnSpell6.BorderColor = Color.Lime;
+                            break;
+                        //45
+                        case 21: ibtnSpell7.BorderColor = Color.Lime;
+                            break;
+                        case 22: ibtnSpell8.BorderColor = Color.Lime;
+                            break;
+                        case 23: ibtnSpell9.BorderColor = Color.Lime;
+                            break;
+                        //60
+                        case 24: ibtnSpell10.BorderColor = Color.Lime;
+                            break;
+                        case 25: ibtnSpell11.BorderColor = Color.Lime;
+                            break;
+                        case 26: ibtnSpell12.BorderColor = Color.Lime;
+                            break;
+                        //75
+                        case 27: ibtnSpell13.BorderColor = Color.Lime;
+                            break;
+                        case 28: ibtnSpell14.BorderColor = Color.Lime;
+                            break;
+                        case 29: ibtnSpell15.BorderColor = Color.Lime;
+                            break;
+                        //90
+                        case 30: ibtnSpell16.BorderColor = Color.Lime;
+                            break;
+                        case 31: ibtnSpell17.BorderColor = Color.Lime;
+                            break;
+                        case 32: ibtnSpell18.BorderColor = Color.Lime;
+                            break;
+                        //empty
+
+                    }
+                }
+            }
+        }
+
         
     }
 }

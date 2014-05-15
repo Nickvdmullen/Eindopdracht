@@ -189,5 +189,28 @@
             }
             return mySpecs;
         }
+
+        public void SaveBuild(Build build)
+        {
+            Open();
+            string Buildname = build.BuildName;
+            string Author = build.Author;
+            string Class = build.SelectedClass;
+            string Spec = build.SelectedSpec;
+            List<string> spells = build.SelectedSpells;
+
+           try
+            {
+                OleDbCommand Command = new OleDbCommand();
+                Command.Parameters.Add("@BuildName",Buildname);
+                Command.Parameters.Add("@BuildAuthor", Author);
+                
+            }
+            catch
+            {
+
+            }
+            Close();
+        }
     }
 }

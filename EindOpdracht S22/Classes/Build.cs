@@ -7,13 +7,13 @@
 
     public class Build
     {
+        Classes.DBControl Database = new Classes.DBControl();
+
         public string BuildName { get; private set; }
         public string Author { get; private set; }
         public string SelectedClass { get; private set; }
         public string SelectedSpec { get; private set; }
         public List<string> SelectedSpells { get; private set; }
-
-        
 
         public Build()
         {
@@ -54,7 +54,7 @@
 
         public void SaveBuild()
         {
-            // Send insert to database.
+            Database.SaveBuild(this);  
         }
 
     }
