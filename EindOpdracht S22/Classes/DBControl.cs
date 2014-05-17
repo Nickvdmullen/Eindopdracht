@@ -17,7 +17,7 @@
             string applicatiepad;
             string accesconnectionstring;
 
-            provider = "Provider=Microsoft.ACE.OLED.12.0";
+            provider = "Provider=Microsoft.ACE.OLED.10.0";
 
             applicatiepad = HttpContext.Current.Request.PhysicalApplicationPath.Substring(0, HttpContext.Current.Request.PhysicalApplicationPath.LastIndexOf("\\"));
 
