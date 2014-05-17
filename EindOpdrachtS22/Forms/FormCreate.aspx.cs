@@ -1,20 +1,21 @@
-﻿namespace EindOpdracht_S22
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Web;
-    using System.Web.UI;
-    using System.Web.UI.WebControls;
-    using System.Drawing;
+﻿using EindopdrachtS22.Classes;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
-    public partial class Builder : System.Web.UI.Page
+namespace EindOpdrachtS22.Forms
+{
+    public partial class FormCreate : System.Web.UI.Page
     {
         Build myBuild = new Build();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void ibtnDeathKnight_Click(object sender, ImageClickEventArgs e)
@@ -23,107 +24,107 @@
             SetToolTips(DeathKnight.PossibleSpecs);
             ibtnDeathKnight.ToolTip = DeathKnight.Tooltip;
             myBuild.AddClass(DeathKnight.Name);
-            Session.Add("Build", myBuild.UpdateBuild());;
+            Session.Add("Build", myBuild.UpdateBuild());
             FillPage();
         }
-
+     
         protected void ibtnDruid_Click(object sender, ImageClickEventArgs e)
         {
             Class Druid = new Class("2");
             SetToolTips(Druid.PossibleSpecs);
             ibtnDruid.ToolTip = Druid.Tooltip;
             myBuild.AddClass(Druid.Name);
-            Session.Add("Build", myBuild.UpdateBuild());;
-            FillPage();
-        }
-
-        protected void ibtnMage_Click(object sender, ImageClickEventArgs e)
-        {
-            Class Mage = new Class("3");
-            SetToolTips(Mage.PossibleSpecs);
-            ibtnMage.ToolTip = Mage.Tooltip;
-            myBuild.AddClass(Mage.Name);
-            Session.Add("Build", myBuild.UpdateBuild());;
-            FillPage();
-        }
-
-        protected void ibtnMonk_Click(object sender, ImageClickEventArgs e)
-        {
-            Class Monk = new Class("4");
-            SetToolTips(Monk.PossibleSpecs);
-            ibtnMonk.ToolTip = Monk.Tooltip;
-            myBuild.AddClass(Monk.Name);
-            Session.Add("Build", myBuild.UpdateBuild());;
-            FillPage();
-        }
-
-        protected void ibtnPaladin_Click(object sender, ImageClickEventArgs e)
-        {
-            Class Paladin = new Class("5");
-            SetToolTips(Paladin.PossibleSpecs);
-            ibtnPaladin.ToolTip = Paladin.Tooltip;
-            myBuild.AddClass(Paladin.Name);
-            Session.Add("Build", myBuild.UpdateBuild());;
-            FillPage();
-        }
-
-        protected void ibtnPriest_Click(object sender, ImageClickEventArgs e)
-        {
-            Class Priest = new Class("6");
-            SetToolTips(Priest.PossibleSpecs);
-            ibtnPriest.ToolTip = Priest.Tooltip;
-            myBuild.AddClass(Priest.Name);
-            Session.Add("Build", myBuild.UpdateBuild());;
+            Session.Add("Build",myBuild.UpdateBuild());
             FillPage();
         }
 
         protected void ibtnHunter_Click(object sender, ImageClickEventArgs e)
         {
-            Class Hunter = new Class("7");
+            Class Hunter = new Class("3");
             SetToolTips(Hunter.PossibleSpecs);
-            ibtnHunter.ToolTip = Hunter.Tooltip;
+            ibtnDruid.ToolTip = Hunter.Tooltip;
             myBuild.AddClass(Hunter.Name);
-            Session.Add("Build", myBuild.UpdateBuild());;
+            Session.Add("Build", myBuild.UpdateBuild());
             FillPage();
         }
 
-        protected void ibtnShaman_Click(object sender, ImageClickEventArgs e)
+        protected void ibtnMage_Click(object sender, ImageClickEventArgs e)
         {
-            Class Shaman = new Class("8");
-            SetToolTips(Shaman.PossibleSpecs);
-            ibtnShaman.ToolTip = Shaman.Tooltip;
-            myBuild.AddClass(Shaman.Name);
-            Session.Add("Build", myBuild.UpdateBuild());;
+            Class Mage = new Class("4");
+            SetToolTips(Mage.PossibleSpecs);
+            ibtnDruid.ToolTip = Mage.Tooltip;
+            myBuild.AddClass(Mage.Name);
+            Session.Add("Build", myBuild.UpdateBuild());
+            FillPage();
+        }
+
+        protected void ibtnMonk_Click(object sender, ImageClickEventArgs e)
+        {
+            Class Monk = new Class("5");
+            SetToolTips(Monk.PossibleSpecs);
+            ibtnDruid.ToolTip = Monk.Tooltip;
+            myBuild.AddClass(Monk.Name);
+            Session.Add("Build", myBuild.UpdateBuild());
+            FillPage();
+        }
+
+        protected void ibtnPaladin_Click(object sender, ImageClickEventArgs e)
+        {
+            Class Paladin = new Class("6");
+            SetToolTips(Paladin.PossibleSpecs);
+            ibtnDruid.ToolTip = Paladin.Tooltip;
+            myBuild.AddClass(Paladin.Name);
+            Session.Add("Build", myBuild.UpdateBuild());
+            FillPage();
+        }
+
+        protected void ibtnPriest_Click(object sender, ImageClickEventArgs e)
+        {
+            Class Priest = new Class("7");
+            SetToolTips(Priest.PossibleSpecs);
+            ibtnDruid.ToolTip = Priest.Tooltip;
+            myBuild.AddClass(Priest.Name);
+            Session.Add("Build", myBuild.UpdateBuild());
             FillPage();
         }
 
         protected void ibtnRogue_Click(object sender, ImageClickEventArgs e)
         {
-            Class Rogue = new Class("9");
+            Class Rogue = new Class("8");
             SetToolTips(Rogue.PossibleSpecs);
-            ibtnRogue.ToolTip = Rogue.Tooltip;
+            ibtnDruid.ToolTip = Rogue.Tooltip;
             myBuild.AddClass(Rogue.Name);
-            Session.Add("Build", myBuild.UpdateBuild());;
+            Session.Add("Build", myBuild.UpdateBuild());
             FillPage();
         }
 
-        protected void ibtnWarrior_Click(object sender, ImageClickEventArgs e)
+        protected void ibtnShaman_Click(object sender, ImageClickEventArgs e)
         {
-            Class Warrior = new Class("10");
-            SetToolTips(Warrior.PossibleSpecs);
-            ibtnWarrior.ToolTip = Warrior.Tooltip;
-            myBuild.AddClass(Warrior.Name);
-            Session.Add("Build", myBuild.UpdateBuild());;
+            Class Shaman = new Class("9");
+            SetToolTips(Shaman.PossibleSpecs);
+            ibtnDruid.ToolTip = Shaman.Tooltip;
+            myBuild.AddClass(Shaman.Name);
+            Session.Add("Build", myBuild.UpdateBuild());
             FillPage();
         }
 
         protected void ibtnWarlock_Click(object sender, ImageClickEventArgs e)
         {
-            Class Warlock = new Class("11");
+            Class Warlock = new Class("10");
             SetToolTips(Warlock.PossibleSpecs);
-            ibtnWarlock.ToolTip = Warlock.Tooltip;
+            ibtnDruid.ToolTip = Warlock.Tooltip;
             myBuild.AddClass(Warlock.Name);
-            Session.Add("Build", myBuild.UpdateBuild());;
+            Session.Add("Build", myBuild.UpdateBuild());
+            FillPage();
+        }
+
+        protected void ibtnWarrior_Click(object sender, ImageClickEventArgs e)
+        {
+            Class Warrior = new Class("11");
+            SetToolTips(Warrior.PossibleSpecs);
+            ibtnWarrior.ToolTip = Warrior.Tooltip;
+            myBuild.AddClass(Warrior.Tooltip);
+            Session.Add("Build", myBuild.UpdateBuild());
             FillPage();
         }
 
@@ -139,7 +140,7 @@
         {
             Check();
             myBuild.AddSpec("13");
-            Session.Add("Build", myBuild.UpdateBuild()); ;
+            Session.Add("Build", myBuild.UpdateBuild());
             FillPage();
         }
 
@@ -147,11 +148,11 @@
         {
             Check();
             myBuild.AddSpec("14");
-            Session.Add("Build", myBuild.UpdateBuild()); ;
+            Session.Add("Build", myBuild.UpdateBuild());
             FillPage();
         }
 
-        protected void ibtnSpell2_Click(object sender, ImageClickEventArgs e)
+        protected void ibtnSpell1_Click(object sender, ImageClickEventArgs e)
         {
             Check();
             myBuild.AddSpell("15");
@@ -159,7 +160,7 @@
             FillPage();
         }
 
-        protected void ibtnSpell3_Click(object sender, ImageClickEventArgs e)
+        protected void ibtnSpell2_Click(object sender, ImageClickEventArgs e)
         {
             Check();
             myBuild.AddSpell("16");
@@ -167,7 +168,7 @@
             FillPage();
         }
 
-        protected void ibtnSpell1_Click(object sender, ImageClickEventArgs e)
+        protected void ibtnSpell3_Click(object sender, ImageClickEventArgs e)
         {
             Check();
             myBuild.AddSpell("17");
@@ -245,6 +246,7 @@
             myBuild.AddSpell("26");
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
+
         }
 
         protected void ibtnSpell13_Click(object sender, ImageClickEventArgs e)
@@ -294,7 +296,6 @@
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
-
         private void SetToolTips(string[] specs)
         {
             ibtnSpec1.ToolTip = specs[0];
@@ -306,7 +307,7 @@
         {
             if (Session["Build"] != null)
             {
-                List<string>Choices = (List<string>)Session["Build"];
+                List<string> Choices = (List<string>)Session["Build"];
 
                 foreach (string item in Choices)
                 {
@@ -463,6 +464,12 @@
             }
         }
 
-        
+        protected void btnSave_Click(object sender, EventArgs e)
+        {
+            myBuild.AddNames(txtBuildName.Text, txtBuildAuthor.Text);
+            Check();
+            myBuild.SaveBuild();
+        }
+
     }
 }

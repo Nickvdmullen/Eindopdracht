@@ -1,4 +1,4 @@
-﻿namespace EindOpdracht_S22.Classes
+﻿namespace EindopdrachtS22.Classes
 {
     using System;
     using System.Collections.Generic;
@@ -9,19 +9,20 @@
     public class DBControl
     {
         private OleDbConnection connection;
+        private string accesconnectionstring;
 
         public DBControl()
         {
             string pad;
             string provider;
             string applicatiepad;
-            string accesconnectionstring;
+            
 
-            provider = "Provider=Microsoft.ACE.OLED.10.0";
+            provider = "Provider=Microsoft.ACE.OLEDB.12.0";
 
             applicatiepad = HttpContext.Current.Request.PhysicalApplicationPath.Substring(0, HttpContext.Current.Request.PhysicalApplicationPath.LastIndexOf("\\"));
 
-            pad = "Data Source=" + applicatiepad + "/DataBase11.accdb";
+            pad = "Data Source=" + applicatiepad + "\\DataBase11.accdb";
 
             accesconnectionstring = provider + ";" + pad;
 
@@ -34,7 +35,7 @@
             {
                 connection.Open();
             }
-            catch(Exception exception)
+            catch (Exception exception)
             {
                 Console.WriteLine("Could not connect Database: " + exception.Message);
             }
@@ -129,6 +130,7 @@
             {
 
             }
+            Close();
             return mytooltips;
         }
 
@@ -158,8 +160,8 @@
         public string[] GetSpecialization(Class Class)
         {
             Open();
-
-            string sql = "SELECT TOOLTIP FROM SPECIALIZATION WHERE CLASSNAME =" + Class.Name;
+            string name = Class.Name;
+            string sql = "SELECT TOOLTIP FROM SPECIALIZATION WHERE CLASSNAME = '" + name + "'";
             OleDbCommand Command = new OleDbCommand(sql, connection);
             string[] mySpecs = new string[3];
 
@@ -171,7 +173,7 @@
                 {
                     if (mySpecs[0] == null)
                     {
-                       mySpecs[0] = (Convert.ToString(Reader["TOOLTIP"]));
+                        mySpecs[0] = (Convert.ToString(Reader["TOOLTIP"]));
                     }
                     else if (mySpecs[1] == null)
                     {
@@ -179,7 +181,7 @@
                     }
                     else if (mySpecs[2] == null)
                     {
-                        mySpecs[3] = (Convert.ToString(Reader["TOOLTIP"]));
+                        mySpecs[2] = (Convert.ToString(Reader["TOOLTIP"]));
                     }
                 }
             }
@@ -187,6 +189,7 @@
             {
 
             }
+            Close();
             return mySpecs;
         }
 
@@ -197,14 +200,63 @@
             string Author = build.Author;
             string Class = build.SelectedClass;
             string Spec = build.SelectedSpec;
-            List<string> spells = build.SelectedSpells;
+            string Spell1 = null;
+            string Spell2 = null;
+            string Spell3 = null;
+            string Spell4 = null;
+            string Spell5 = null;
+            string Spell6 = null;
 
-           try
+            foreach (string spell in build.SelectedSpells)
             {
-                OleDbCommand Command = new OleDbCommand();
-                Command.Parameters.Add("@BuildName",Buildname);
-                Command.Parameters.Add("@BuildAuthor", Author);
-                
+                if(Spell1 == null)
+                {
+                    Spell1 = spell;
+                }
+                else if (Spell2 == null)
+                {
+                    Spell2 = spell;
+                }
+                else if (Spell3 == null)
+                {
+                    Spell3 = spell;
+                }
+                else if (Spell4 == null)
+                {
+                    Spell4 = spell;
+                }
+                else if (Spell5 == null)
+                {
+                    Spell5 = spell;
+                }
+                else if (Spell6 == null)
+                {
+                    Spell6 = spell;
+                }
+            }
+
+            try
+            {
+                OleDbConnection myconnection = new OleDbConnection(accesconnectionstring);
+                /*Command.Parameters.AddWithValue("@BuildName", Buildname);
+                Command.Parameters.AddWithValue("@BuildAuthor", Author);
+                Command.Parameters.AddWithValue("@Class", Class);
+                Command.Parameters.AddWithValue("@Spec", Spec);
+                Command.Parameters.AddWithValue("@Spell1", Spell1);
+                Command.Parameters.AddWithValue("@Spell2", Spell2);
+                Command.Parameters.AddWithValue("@Spell3", Spell3);
+                Command.Parameters.AddWithValue("@Spell4", Spell4);
+                Command.Parameters.AddWithValue("@Spell5", Spell5);
+                Command.Parameters.AddWithValue("@Spell6", Spell6);
+
+                Command.Connection = connection;
+                Command.ExecuteNonQuery();*/
+
+                OleDbCommand Command = myconnection.CreateCommand();
+                myconnection.Open();
+                Command.CommandText = "INSERT INTO Build ([BuildName],[Author],[Class],[Spec],[Spell1],[Spell2],[Spell3],[Spell4],[Spell5],[Spell6])" +
+                    "VALUES('" + Buildname + "','" + Author + "','" + Class + "','" + Spec + "','" + Spell1 + "','" + Spell2 + "','" + Spell3 + "','" + Spell4 + "','" + Spell5 + "','" + Spell6 + "')";
+                Command.ExecuteNonQuery();
             }
             catch
             {

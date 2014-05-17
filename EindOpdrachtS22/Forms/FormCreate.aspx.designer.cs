@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EindOpdracht_S22 {
+namespace EindOpdrachtS22.Forms {
     
     
-    public partial class Builder {
+    public partial class FormCreate {
         
         /// <summary>
         /// form1 control.
@@ -22,13 +22,13 @@ namespace EindOpdracht_S22 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// pStart control.
+        /// PanelName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pStart;
+        protected global::System.Web.UI.WebControls.Panel PanelName;
         
         /// <summary>
         /// lblBuildName control.
@@ -40,13 +40,13 @@ namespace EindOpdracht_S22 {
         protected global::System.Web.UI.WebControls.Label lblBuildName;
         
         /// <summary>
-        /// tbBuildName control.
+        /// txtBuildName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbBuildName;
+        protected global::System.Web.UI.WebControls.TextBox txtBuildName;
         
         /// <summary>
         /// lblBuildAuthor control.
@@ -58,40 +58,40 @@ namespace EindOpdracht_S22 {
         protected global::System.Web.UI.WebControls.Label lblBuildAuthor;
         
         /// <summary>
-        /// tbBuildAuthor control.
+        /// txtBuildAuthor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbBuildAuthor;
+        protected global::System.Web.UI.WebControls.TextBox txtBuildAuthor;
         
         /// <summary>
-        /// btnBuildSave control.
+        /// btnSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuildSave;
+        protected global::System.Web.UI.WebControls.Button btnSave;
         
         /// <summary>
-        /// Pmargin control.
+        /// Panel2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Pmargin;
+        protected global::System.Web.UI.WebControls.Panel Panel2;
         
         /// <summary>
-        /// PBuilder control.
+        /// PanelBuild control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PBuilder;
+        protected global::System.Web.UI.WebControls.Panel PanelBuild;
         
         /// <summary>
         /// ibtnDeathKnight control.
@@ -110,6 +110,15 @@ namespace EindOpdracht_S22 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton ibtnDruid;
+        
+        /// <summary>
+        /// ibtnHunter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ibtnHunter;
         
         /// <summary>
         /// ibtnMage control.
@@ -148,13 +157,13 @@ namespace EindOpdracht_S22 {
         protected global::System.Web.UI.WebControls.ImageButton ibtnPriest;
         
         /// <summary>
-        /// ibtnHunter control.
+        /// ibtnRogue control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ibtnHunter;
+        protected global::System.Web.UI.WebControls.ImageButton ibtnRogue;
         
         /// <summary>
         /// ibtnShaman control.
@@ -166,13 +175,13 @@ namespace EindOpdracht_S22 {
         protected global::System.Web.UI.WebControls.ImageButton ibtnShaman;
         
         /// <summary>
-        /// ibtnRogue control.
+        /// ibtnWarlock control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ibtnRogue;
+        protected global::System.Web.UI.WebControls.ImageButton ibtnWarlock;
         
         /// <summary>
         /// ibtnWarrior control.
@@ -182,15 +191,6 @@ namespace EindOpdracht_S22 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton ibtnWarrior;
-        
-        /// <summary>
-        /// ibtnWarlock control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ibtnWarlock;
         
         /// <summary>
         /// ibtnSpec1 control.
@@ -247,13 +247,13 @@ namespace EindOpdracht_S22 {
         protected global::System.Web.UI.WebControls.ImageButton ibtnSpell3;
         
         /// <summary>
-        /// imgLvl1 control.
+        /// img15 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgLvl1;
+        protected global::System.Web.UI.WebControls.Image img15;
         
         /// <summary>
         /// ibtnSpell4 control.
@@ -283,13 +283,13 @@ namespace EindOpdracht_S22 {
         protected global::System.Web.UI.WebControls.ImageButton ibtnSpell6;
         
         /// <summary>
-        /// imgLvl2 control.
+        /// img30 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgLvl2;
+        protected global::System.Web.UI.WebControls.Image img30;
         
         /// <summary>
         /// ibtnSpell7 control.
@@ -319,13 +319,13 @@ namespace EindOpdracht_S22 {
         protected global::System.Web.UI.WebControls.ImageButton ibtnSpell9;
         
         /// <summary>
-        /// imgLvl3 control.
+        /// img45 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgLvl3;
+        protected global::System.Web.UI.WebControls.Image img45;
         
         /// <summary>
         /// ibtnSpell10 control.
@@ -355,13 +355,13 @@ namespace EindOpdracht_S22 {
         protected global::System.Web.UI.WebControls.ImageButton ibtnSpell12;
         
         /// <summary>
-        /// imgLvl4 control.
+        /// img60 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgLvl4;
+        protected global::System.Web.UI.WebControls.Image img60;
         
         /// <summary>
         /// ibtnSpell13 control.
@@ -391,13 +391,13 @@ namespace EindOpdracht_S22 {
         protected global::System.Web.UI.WebControls.ImageButton ibtnSpell15;
         
         /// <summary>
-        /// imgLvl5 control.
+        /// img75 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgLvl5;
+        protected global::System.Web.UI.WebControls.Image img75;
         
         /// <summary>
         /// ibtnSpell16 control.
@@ -427,12 +427,12 @@ namespace EindOpdracht_S22 {
         protected global::System.Web.UI.WebControls.ImageButton ibtnSpell18;
         
         /// <summary>
-        /// imgLvl6 control.
+        /// img90 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgLvl6;
+        protected global::System.Web.UI.WebControls.Image img90;
     }
 }

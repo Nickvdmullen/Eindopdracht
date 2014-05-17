@@ -1,4 +1,4 @@
-﻿namespace EindOpdracht_S22
+﻿namespace EindopdrachtS22.Classes
 {
     using System;
     using System.Collections.Generic;
@@ -16,11 +16,12 @@
 
         public Class(string name)
         {
+            this.Name = name;
             this.PossibleSpecs = Database.GetSpecialization(this);
             this.Tooltip = Database.GetToolTip(this);
-            this.Name = name;
+            
         }
 
-        
+
     }
 }

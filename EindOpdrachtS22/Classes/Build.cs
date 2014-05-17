@@ -1,4 +1,4 @@
-﻿namespace EindOpdracht_S22
+﻿namespace EindopdrachtS22.Classes
 {
     using System;
     using System.Collections.Generic;
@@ -52,9 +52,14 @@
             this.SelectedSpells.Add("");
         }
 
+        public void AddNames(string name,string author)
+        {
+            this.BuildName = name;
+            this.Author = author;
+        }
         public void SaveBuild()
         {
-            Database.SaveBuild(this);  
+            Database.SaveBuild(this);
         }
 
     }

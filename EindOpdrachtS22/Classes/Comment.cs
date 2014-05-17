@@ -1,4 +1,4 @@
-﻿namespace EindOpdracht_S22
+﻿namespace EindopdrachtS22.Classes
 {
     using System;
     using System.Collections.Generic;
@@ -11,11 +11,11 @@
         public string Comments { get; private set; }
         public string CommentID { get; private set; }
 
-        public Comment(string Comment,string BuildName)
+        public Comment(string Comment, string BuildName)
         {
             // this.CommentID = Get CommentID from database
             this.Comments = Comment;
-            this.BuildName = BuildName;            
+            this.BuildName = BuildName;
         }
 
         private void SendComment()

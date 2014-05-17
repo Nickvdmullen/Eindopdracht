@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EindOpdracht_S22 {
+namespace EindOpdrachtS22.Forms {
     
     
     public partial class Start {
@@ -22,22 +22,13 @@ namespace EindOpdracht_S22 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// pStart control.
+        /// Panel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pStart;
-        
-        /// <summary>
-        /// lblStartName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblStartName;
+        protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
         /// btnStartNew control.
@@ -49,13 +40,13 @@ namespace EindOpdracht_S22 {
         protected global::System.Web.UI.WebControls.Button btnStartNew;
         
         /// <summary>
-        /// ddlBuilds control.
+        /// dllBuilds control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlBuilds;
+        protected global::System.Web.UI.WebControls.DropDownList dllBuilds;
         
         /// <summary>
         /// btnStartLoad control.
