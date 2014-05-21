@@ -85,6 +85,15 @@ namespace EindOpdrachtS22.Forms {
         protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList2;
         
         /// <summary>
+        /// btnViewBack control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnViewBack;
+        
+        /// <summary>
         /// pnlViewBuild control.
         /// </summary>
         /// <remarks>
@@ -193,58 +202,58 @@ namespace EindOpdrachtS22.Forms {
         protected global::System.Web.UI.WebControls.Image imgWarrior;
         
         /// <summary>
-        /// Image12 control.
+        /// ImageSpec1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image12;
+        protected global::System.Web.UI.WebControls.Image ImageSpec1;
         
         /// <summary>
-        /// Image13 control.
+        /// ImageSpec2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image13;
+        protected global::System.Web.UI.WebControls.Image ImageSpec2;
         
         /// <summary>
-        /// Image14 control.
+        /// ImageSpec3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image14;
+        protected global::System.Web.UI.WebControls.Image ImageSpec3;
         
         /// <summary>
-        /// Image15 control.
+        /// ImageSpell1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image15;
+        protected global::System.Web.UI.WebControls.Image ImageSpell1;
         
         /// <summary>
-        /// Image16 control.
+        /// ImageSpell2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image16;
+        protected global::System.Web.UI.WebControls.Image ImageSpell2;
         
         /// <summary>
-        /// Image17 control.
+        /// ImageSpell3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image17;
+        protected global::System.Web.UI.WebControls.Image ImageSpell3;
         
         /// <summary>
         /// img15 control.
@@ -256,31 +265,31 @@ namespace EindOpdrachtS22.Forms {
         protected global::System.Web.UI.WebControls.Image img15;
         
         /// <summary>
-        /// Image18 control.
+        /// ImageSpell4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image18;
+        protected global::System.Web.UI.WebControls.Image ImageSpell4;
         
         /// <summary>
-        /// Image19 control.
+        /// ImageSpell5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image19;
+        protected global::System.Web.UI.WebControls.Image ImageSpell5;
         
         /// <summary>
-        /// Image20 control.
+        /// ImageSpell6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image20;
+        protected global::System.Web.UI.WebControls.Image ImageSpell6;
         
         /// <summary>
         /// img30 control.
@@ -292,31 +301,31 @@ namespace EindOpdrachtS22.Forms {
         protected global::System.Web.UI.WebControls.Image img30;
         
         /// <summary>
-        /// Image21 control.
+        /// ImageSpell7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image21;
+        protected global::System.Web.UI.WebControls.Image ImageSpell7;
         
         /// <summary>
-        /// Image22 control.
+        /// ImageSpell8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image22;
+        protected global::System.Web.UI.WebControls.Image ImageSpell8;
         
         /// <summary>
-        /// Image23 control.
+        /// ImageSpell9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image23;
+        protected global::System.Web.UI.WebControls.Image ImageSpell9;
         
         /// <summary>
         /// img45 control.
@@ -328,31 +337,31 @@ namespace EindOpdrachtS22.Forms {
         protected global::System.Web.UI.WebControls.Image img45;
         
         /// <summary>
-        /// Image24 control.
+        /// ImageSpell10 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image24;
+        protected global::System.Web.UI.WebControls.Image ImageSpell10;
         
         /// <summary>
-        /// Image25 control.
+        /// ImageSpell11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image25;
+        protected global::System.Web.UI.WebControls.Image ImageSpell11;
         
         /// <summary>
-        /// Image26 control.
+        /// ImageSpell12 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image26;
+        protected global::System.Web.UI.WebControls.Image ImageSpell12;
         
         /// <summary>
         /// img60 control.
@@ -364,31 +373,31 @@ namespace EindOpdrachtS22.Forms {
         protected global::System.Web.UI.WebControls.Image img60;
         
         /// <summary>
-        /// Image27 control.
+        /// ImageSpell13 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image27;
+        protected global::System.Web.UI.WebControls.Image ImageSpell13;
         
         /// <summary>
-        /// Image28 control.
+        /// ImageSpell14 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image28;
+        protected global::System.Web.UI.WebControls.Image ImageSpell14;
         
         /// <summary>
-        /// Image29 control.
+        /// ImageSpell15 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image29;
+        protected global::System.Web.UI.WebControls.Image ImageSpell15;
         
         /// <summary>
         /// img75 control.
@@ -400,31 +409,31 @@ namespace EindOpdrachtS22.Forms {
         protected global::System.Web.UI.WebControls.Image img75;
         
         /// <summary>
-        /// Image30 control.
+        /// ImageSpell16 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image30;
+        protected global::System.Web.UI.WebControls.Image ImageSpell16;
         
         /// <summary>
-        /// Image31 control.
+        /// ImageSpell17 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image31;
+        protected global::System.Web.UI.WebControls.Image ImageSpell17;
         
         /// <summary>
-        /// Image32 control.
+        /// ImageSpell18 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image32;
+        protected global::System.Web.UI.WebControls.Image ImageSpell18;
         
         /// <summary>
         /// img90 control.

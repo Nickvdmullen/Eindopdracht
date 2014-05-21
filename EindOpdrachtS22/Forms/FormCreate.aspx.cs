@@ -123,7 +123,7 @@ namespace EindOpdrachtS22.Forms
             Class Warrior = new Class("11");
             SetToolTips(Warrior.PossibleSpecs);
             ibtnWarrior.ToolTip = Warrior.Tooltip;
-            myBuild.AddClass(Warrior.Tooltip);
+            myBuild.AddClass(Warrior.Name);
             Session.Add("Build", myBuild.UpdateBuild());
             FillPage();
         }
@@ -155,7 +155,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell1_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("15");
+            myBuild.AddSpell("15",0);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -163,7 +163,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell2_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("16");
+            myBuild.AddSpell("16",0);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -171,7 +171,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell3_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("17");
+            myBuild.AddSpell("17",0);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -179,7 +179,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell4_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("18");
+            myBuild.AddSpell("18",1);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -187,7 +187,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell5_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("19");
+            myBuild.AddSpell("19",1);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -195,7 +195,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell6_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("20");
+            myBuild.AddSpell("20",1);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -203,7 +203,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell7_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("21");
+            myBuild.AddSpell("21",2);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -211,7 +211,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell8_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("22");
+            myBuild.AddSpell("22",2);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -219,7 +219,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell9_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("23");
+            myBuild.AddSpell("23",2);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -227,7 +227,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell10_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("24");
+            myBuild.AddSpell("24",3);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -235,7 +235,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell11_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("25");
+            myBuild.AddSpell("25",3);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -243,7 +243,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell12_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("26");
+            myBuild.AddSpell("26",3);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
 
@@ -252,7 +252,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell13_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("27");
+            myBuild.AddSpell("27",4);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -260,7 +260,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell14_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("28");
+            myBuild.AddSpell("28",4);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -268,7 +268,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell15_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("29");
+            myBuild.AddSpell("29",4);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -276,7 +276,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell16_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("30");
+            myBuild.AddSpell("30",5);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -284,7 +284,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell17_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("31");
+            myBuild.AddSpell("31",5);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -292,7 +292,7 @@ namespace EindOpdrachtS22.Forms
         protected void ibtnSpell18_Click(object sender, ImageClickEventArgs e)
         {
             Check();
-            myBuild.AddSpell("32");
+            myBuild.AddSpell("32",5);
             Session.Add("Build", myBuild.UpdateBuild()); ;
             FillPage();
         }
@@ -308,7 +308,7 @@ namespace EindOpdrachtS22.Forms
             if (Session["Build"] != null)
             {
                 List<string> Choices = (List<string>)Session["Build"];
-
+                int counter = 0;
                 foreach (string item in Choices)
                 {
                     if (myBuild.SelectedClass == null)
@@ -321,7 +321,9 @@ namespace EindOpdrachtS22.Forms
                     }
                     else if (myBuild.SelectedSpells.Count < 7)
                     {
-                        myBuild.AddSpell(item);
+                        
+                        myBuild.AddSpell(item,counter);
+                        counter++;
                     }
 
                 }
@@ -390,23 +392,23 @@ namespace EindOpdrachtS22.Forms
                             break;
                         case 2: ibtnDruid.BorderColor = Color.Lime;
                             break;
-                        case 3: ibtnMage.BorderColor = Color.Lime;
+                        case 4: ibtnMage.BorderColor = Color.Lime;
                             break;
-                        case 4: ibtnMonk.BorderColor = Color.Lime;
+                        case 5: ibtnMonk.BorderColor = Color.Lime;
                             break;
-                        case 5: ibtnPaladin.BorderColor = Color.Lime;
+                        case 6: ibtnPaladin.BorderColor = Color.Lime;
                             break;
-                        case 6: ibtnPriest.BorderColor = Color.Lime;
+                        case 7: ibtnPriest.BorderColor = Color.Lime;
                             break;
-                        case 7: ibtnHunter.BorderColor = Color.Lime;
+                        case 3: ibtnHunter.BorderColor = Color.Lime;
                             break;
-                        case 8: ibtnShaman.BorderColor = Color.Lime;
+                        case 9: ibtnShaman.BorderColor = Color.Lime;
                             break;
-                        case 9: ibtnRogue.BorderColor = Color.Lime;
+                        case 8: ibtnRogue.BorderColor = Color.Lime;
                             break;
-                        case 10: ibtnWarrior.BorderColor = Color.Lime;
+                        case 11: ibtnWarrior.BorderColor = Color.Lime;
                             break;
-                        case 11: ibtnWarlock.BorderColor = Color.Lime;
+                        case 10: ibtnWarlock.BorderColor = Color.Lime;
                             break;
                         //Specialization
                         case 12: ibtnSpec1.BorderColor = Color.Lime;
@@ -469,6 +471,13 @@ namespace EindOpdrachtS22.Forms
             myBuild.AddNames(txtBuildName.Text, txtBuildAuthor.Text);
             Check();
             myBuild.SaveBuild();
+        }
+
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            myBuild.ResetBuild();
+            Session.RemoveAll();
+            Response.Redirect("http://localhost:2780/Forms/Start.aspx",false);
         }
 
     }

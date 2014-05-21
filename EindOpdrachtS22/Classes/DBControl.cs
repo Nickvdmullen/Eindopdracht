@@ -82,7 +82,7 @@
         public List<string> GetBuild(string BuildName)
         {
             Open();
-            string sql = "SELECT ClassName,Specname,Spellname From [Build]";
+            string sql = "SELECT * From [BUILD] where Buildname ='" + BuildName+"'";
             OleDbCommand Command = new OleDbCommand(sql, connection);
             List<string> ReceivedBuild = new List<string>();
 
@@ -92,12 +92,14 @@
 
                 while (Reader.Read())
                 {
-                    string className = Convert.ToString(Reader["ClassName"]);
-                    string specName = Convert.ToString(Reader["SpecName"]);
-                    string spellname = Convert.ToString(Reader["spellname"]);
-                    ReceivedBuild.Add(className);
-                    ReceivedBuild.Add(specName);
-                    ReceivedBuild.Add(spellname);
+                    ReceivedBuild.Add(Reader[1].ToString());
+                    ReceivedBuild.Add(Reader[2].ToString());
+                    ReceivedBuild.Add(Reader[3].ToString());
+                    ReceivedBuild.Add(Reader[4].ToString());
+                    ReceivedBuild.Add(Reader[5].ToString());
+                    ReceivedBuild.Add(Reader[6].ToString());
+                    ReceivedBuild.Add(Reader[7].ToString());
+                    ReceivedBuild.Add(Reader[8].ToString());
                 }
             }
             catch (Exception exception)
@@ -113,7 +115,7 @@
         {
             Open();
 
-            string sql = "SELECT TOOLTIP FROM SPECIALIZATION WHERE CLASSNAME =" + Class.Name;
+            string sql = "SELECT TOOLTIP FROM SPECIALIZATION WHERE CLASSNAME = " + Class.Name;
             OleDbCommand Command = new OleDbCommand(sql, connection);
             List<string> mytooltips = new List<string>();
 
@@ -161,7 +163,7 @@
         {
             Open();
             string name = Class.Name;
-            string sql = "SELECT TOOLTIP FROM SPECIALIZATION WHERE CLASSNAME = '" + name + "'";
+            string sql = "SELECT TOOLTIP FROM SPECIALIZATION WHERE CLASSNAME = " + name;
             OleDbCommand Command = new OleDbCommand(sql, connection);
             string[] mySpecs = new string[3];
 
@@ -265,10 +267,10 @@
             Close();
         }
 
-        public List<Comment> GetDataSource()
+        public List<Comment> GetDataSource(string BuildName)
         {
             Open();
-            string sql = "SELECT * FROM COMMENT";
+            string sql = "SELECT * FROM COMMENT WHERE BUILDNAME = '" + BuildName +"'";
             OleDbCommand Command = new OleDbCommand(sql,connection);
             List<Comment> MyComments = new List<Comment>();
             try

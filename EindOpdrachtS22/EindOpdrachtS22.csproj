@@ -97,8 +97,9 @@
     <None Include="Resources\Warlock.PNG" />
     <None Include="Resources\Warrior.PNG" />
     <Content Include="Forms\View.aspx" />
-    <Content Include="StyleSheet1.css" />
-    <Content Include="ViewCSS.css" />
+    <Content Include="CSS\StartCSS.css" />
+    <Content Include="CSS\CreateCSS.css" />
+    <Content Include="CSS\ViewCSS.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

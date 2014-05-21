@@ -39,10 +39,30 @@
             this.SelectedSpec = Spec;
         }
 
-        public void AddSpell(string spell)
+        public void AddSpell(string spell, int position)
         {
-            SelectedSpells.Add(spell);
-        }
+            switch(position)
+            {
+                case 0:   SelectedSpells.Add("0");
+                          SelectedSpells[0] = spell;
+                          break;
+                case 1: SelectedSpells.Add("0");
+                          SelectedSpells[1] = spell;
+                          break;
+                case 2: SelectedSpells.Add("0");
+                          SelectedSpells[2] = spell;
+                          break;
+                case 3: SelectedSpells.Add("0");
+                          SelectedSpells[3] = spell;
+                          break;
+                case 4: SelectedSpells.Add("0");
+                          SelectedSpells[4] = spell;
+                          break;
+                case 5: SelectedSpells.Add("0");
+                          SelectedSpells[5] = spell;
+                          break;
+            }
+       }
 
         public void ResetBuild()
         {

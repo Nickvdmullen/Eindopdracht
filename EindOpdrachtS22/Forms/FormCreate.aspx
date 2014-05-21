@@ -22,6 +22,7 @@
             <br />
             <br />
             <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
+            <asp:Button ID="btnBack" runat="server" OnClick="btnBack_Click" Text="Back" />
             <br />
         </asp:Panel>
         </div>

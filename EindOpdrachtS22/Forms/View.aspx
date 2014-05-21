@@ -28,6 +28,9 @@
                 <asp:ListItem>5</asp:ListItem>
             </asp:RadioButtonList>
             <br />
+            <asp:Button ID="btnViewBack" runat="server" OnClick="btnViewBack_Click" style="height: 26px" Text="Back" />
+            <br />
+            <br />
         </asp:Panel>
         </div>
         <br />
@@ -47,44 +50,44 @@
         <asp:Image ID="imgWarrior" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/Warrior.PNG" />
         <br />
         <br />
-        <asp:Image ID="Image12" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/spec1.png" />
-        <asp:Image ID="Image13" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/spec2.png" />
-        <asp:Image ID="Image14" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/spec3.png" />
+        <asp:Image ID="ImageSpec1" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/spec1.png" />
+        <asp:Image ID="ImageSpec2" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/spec2.png" />
+        <asp:Image ID="ImageSpec3" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/spec3.png" />
         <br />
         <br />
-        <asp:Image ID="Image15" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
-        <asp:Image ID="Image16" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
-        <asp:Image ID="Image17" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell1" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell2" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell3" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
         <asp:Image ID="img15" runat="server" ImageUrl="~/Resources/15.PNG" />
         <br />
         <br />
-        <asp:Image ID="Image18" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
-        <asp:Image ID="Image19" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
-        <asp:Image ID="Image20" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:image ID="ImageSpell4" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell5" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell6" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
         <asp:Image ID="img30" runat="server" ImageUrl="~/Resources/30.PNG" />
         <br />
         <br />
-        <asp:Image ID="Image21" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
-        <asp:Image ID="Image22" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
-        <asp:Image ID="Image23" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell7" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell8" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell9" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
         <asp:Image ID="img45" runat="server" ImageUrl="~/Resources/45.PNG" />
         <br />
         <br />
-        <asp:Image ID="Image24" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
-        <asp:Image ID="Image25" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
-        <asp:Image ID="Image26" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell10" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell11" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell12" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
         <asp:Image ID="img60" runat="server" ImageUrl="~/Resources/60.PNG" />
         <br />
         <br />
-        <asp:Image ID="Image27" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
-        <asp:Image ID="Image28" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
-        <asp:Image ID="Image29" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell13" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell14" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell15" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
         <asp:Image ID="img75" runat="server" ImageUrl="~/Resources/75.PNG" />
         <br />
         <br />
-        <asp:Image ID="Image30" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
-        <asp:Image ID="Image31" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
-        <asp:Image ID="Image32" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell16" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell17" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
+        <asp:Image ID="ImageSpell18" runat="server" BorderStyle="Solid" ImageUrl="~/Resources/skill.png" />
         <asp:Image ID="img90" runat="server" ImageUrl="~/Resources/90.PNG" />
             <br />
             <asp:Label ID="lblViewComments" runat="server" Text="Comments"></asp:Label>
