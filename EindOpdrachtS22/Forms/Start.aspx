@@ -15,7 +15,7 @@
             <br />
             <asp:DropDownList ID="dllBuilds" runat="server">
             </asp:DropDownList>
-            <asp:Button ID="btnStartLoad" runat="server" Text="Load" />
+            <asp:Button ID="btnStartLoad" runat="server" Text="Load" OnClick="btnStartLoad_Click" />
         </asp:Panel>
     
     </div>

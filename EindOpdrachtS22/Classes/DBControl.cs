@@ -264,5 +264,34 @@
             }
             Close();
         }
+
+        public List<Comment> GetDataSource()
+        {
+            Open();
+            string sql = "SELECT * FROM COMMENT";
+            OleDbCommand Command = new OleDbCommand(sql,connection);
+            List<Comment> MyComments = new List<Comment>();
+            try
+            {
+                OleDbDataReader reader = Command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Comment newComment = new Classes.Comment();
+                    newComment.CommentID = reader[0].ToString();
+                    newComment.BuildName = reader[1].ToString();
+                    newComment.Comments = reader[2].ToString();
+                    MyComments.Add(newComment);
+                }
+                return MyComments;
+            }
+            catch
+            {
+                throw;
+            }
+            finally
+            {
+                Close();
+            }
+        }
     }
 }

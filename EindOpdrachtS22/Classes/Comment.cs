@@ -4,18 +4,17 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Web;
-
+    
     public class Comment
     {
-        public string BuildName { get; private set; }
-        public string Comments { get; private set; }
-        public string CommentID { get; private set; }
+        public string CommentID { get; set; }
+        public string BuildName { get; set; }
+        public string Comments { get; set; }
+        
 
-        public Comment(string Comment, string BuildName)
+        public Comment()
         {
-            // this.CommentID = Get CommentID from database
-            this.Comments = Comment;
-            this.BuildName = BuildName;
+            
         }
 
         private void SendComment()
