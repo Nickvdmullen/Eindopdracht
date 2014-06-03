@@ -15,10 +15,13 @@
             <br />
             <asp:Label ID="lblBuildName" runat="server" Text="BuildName:"></asp:Label>
             <asp:TextBox ID="txtBuildName" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator id="validatorName" runat="server" ControlToValidate="txtBuildName" ErrorMessage="Please enter a buildname."></asp:RequiredFieldValidator>
             <br />
             <br />
             <asp:Label ID="lblBuildAuthor" runat="server" Text="Build Author:"></asp:Label>
             <asp:TextBox ID="txtBuildAuthor" runat="server"></asp:TextBox>
+             <asp:RequiredFieldValidator id="ValidatorAuthor" runat="server" ControlToValidate="txtBuildAuthor" ErrorMessage="Please enter a author."></asp:RequiredFieldValidator>
+           
             <br />
             <br />
             <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />

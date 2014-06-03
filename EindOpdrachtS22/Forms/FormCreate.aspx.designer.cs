@@ -49,6 +49,15 @@ namespace EindOpdrachtS22.Forms {
         protected global::System.Web.UI.WebControls.TextBox txtBuildName;
         
         /// <summary>
+        /// validatorName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validatorName;
+        
+        /// <summary>
         /// lblBuildAuthor control.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,15 @@ namespace EindOpdrachtS22.Forms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtBuildAuthor;
+        
+        /// <summary>
+        /// ValidatorAuthor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidatorAuthor;
         
         /// <summary>
         /// btnSave control.
