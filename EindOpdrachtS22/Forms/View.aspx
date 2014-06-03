@@ -6,6 +6,7 @@
 <head runat="server">
     <title></title>
     <link href="../ViewCSS.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/ViewCSS.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">

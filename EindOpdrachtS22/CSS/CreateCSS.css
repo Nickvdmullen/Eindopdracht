@@ -35,12 +35,18 @@
 {
     margin-left:20px;
 }
-#pnlName
-{
-    text-align:center;
-}
 
 #pnlBuild
 {
     text-align:center;
+}
+
+#btnBack
+{
+    margin-left:20px;
+}
+
+#btnSave
+{
+    margin-left:120px;
 }
